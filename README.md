@@ -6,9 +6,10 @@ ___
 **This repository contains configurations for Neovim and Zsh, including plugins and settings for a personalized development environment. Follow the instructions below to set up and install everything.**
 ___
 ___
+![Image](https://github.com/jcmspg/nvim-configs/blob/main/screenshots/Nvim.png?raw=true "Nvim")
 
 ## Neovim Configuration
-#### Plugins Used
+### Plugins Used
 * [awesome-vim-colorschemes](https://github.com/rafi/awesome-vim-colorschemes): Provides a collection of beautiful color schemes for Vim.
 * [vim-airline](https://github.com/rafi/awesome-vim-colorschemes): A lightweight statusline and tabline plugin for Vim.
 * [nerdtree](https://github.com/rafi/awesome-vim-colorschemes): A tree explorer plugin for Vim.
@@ -59,11 +60,12 @@ ___
 
 ## Zsh Configuration
 
-#### Theme used
+![Image](https://github.com/jcmspg/nvim-configs/blob/main/screenshots/Terminal.png?raw=true "Terminal")
+### Theme used
 The Zsh theme used in this configuration is **agnoster**.
-#### Plugins Used
+### Plugins Used
 - [Git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
-#### Installation Steps
+### Installation Steps
 1. Install [Oh My Zsh](https://ohmyz.sh/) if you haven't already. You can install it via curl or wget:
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -84,7 +86,7 @@ ___
 ***
 ---
 
-## Additional Setups
+## Additional Setup
 
 1. ### Environment Variables:
 * If you have any specific environment variables you need to set, you can add them to your ~/.zshrc file using the export command. For example:
@@ -108,3 +110,14 @@ bindkey "^[[A" history-search-backward
 * Consider setting up a dotfiles repository to manage and version control your configuration files across different machines.
 6. ### Backup and Version Control:
 * Before making any changes to your configuration files, it's recommended to create a backup or commit your changes to a version control system like Git. This ensures you can easily revert changes if needed and keep track of your configuration history.
+
+
+## More Info
+### Troubleshooting
+* If you encounter any issues during setup, the wiki page to this repository is still under development, so, as of now, google is your best friend for solutions or workarounds. Also, don't forget to RTFM.
+### Contributing
+* Contributions are welcome!
+### License
+* This project is licensed under the [MIT License](github.com/jcmspg/nvim-configs/blob/main/LICENSE.MD). Make sure to read and understand the terms before using or modifying the configurations.
+###
+* For questions, feedback, or support, you can reach me out at: joaocmspgomes@gmail.com
