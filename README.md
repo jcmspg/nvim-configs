@@ -118,6 +118,6 @@ bindkey "^[[A" history-search-backward
 ### Contributing
 * Contributions are welcome!
 ### License
-* This project is licensed under the [MIT License](github.com/jcmspg/nvim-configs/blob/main/LICENSE.MD). Make sure to read and understand the terms before using or modifying the configurations.
+* This project is licensed under the [MIT License](https://github.com/jcmspg/nvim-configs/blob/main/LICENSE.md). Make sure to read and understand the terms before using or modifying the configurations.
 ###
 * For questions, feedback, or support, you can reach me out at: joaocmspgomes@gmail.com
