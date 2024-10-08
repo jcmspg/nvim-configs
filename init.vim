@@ -2,7 +2,6 @@ call        plug#begin()
 
 Plug        'https://github.com/rafi/awesome-vim-colorschemes'
 Plug        'https://github.com/vim-airline/vim-airline'
-Plug        'https://github.com/preservim/nerdtree'
 Plug        'https://github.com/ryanoasis/vim-devicons'
 Plug        'https://github.com/tc50cal/vim-terminal'
 Plug        'https://github.com/preservim/tagbar'
@@ -11,6 +10,8 @@ Plug        'Raimondi/delimitMate'
 Plug        'wellle/context.vim'
 Plug        'github/copilot.vim'
 Plug        'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+Plug        'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
 
 call        plug#end()
 
@@ -38,17 +39,44 @@ filetype plugin		on
 set			cursorline
 set			spell
 
+
 let         delimitMate_autoclosure = 1
 let         delimitMate_expand_cr = 1
 
-autocmd VimEnter * NERDTree
+
+" Airline
+let         g:airline_powerline_fonts = 1
+let         g:airline_theme = 'gruvbox'
+let         g:airline#extensions#tabline#enabled = 1
+let         g:airline#extensions#tabline#fnamemod = ':t'
+let         g:airline#extensions#tabline#buffer_idx_mode = 1
+let         g:airline#extensions#tabline#show_buffers = 1
+let         g:airline#extensions#tabline#show_tab_count = 1
+let         g:airline#extensions#tabline#show_tab_type = 1
+let         g:airline#extensions#tabline#show_close_button = 1
+let         g:airline#extensions#tabline#show_splits = 1
+let         g:airline#extensions#tabline#show_wins = 1
+let         g:airline#extensions#tabline#show_flags = 1
+
+" oopen chadtree on startup
+let         g:chadtree_open_on_vimenter = 1
+
+"map SPACE as leader key
+let mapleader = " "
+let maplocalleader = " "
+
+
+" remap chadtree to <leader>v
+nnoremap <leader>v <cmd>CHADopen<cr>
+
+" remap terminal to <leader>t
+nnoremap <leader>t <cmd>ToggleTerm<cr>
 
 let g:coc_global_extensions = ['coc-clangd', 'coc-explorer']
 
-colorscheme alduin
+colorscheme gruvbox 
 
-
-" Remap <Alt> as the trigger for autocompletion
+" Remap <ctrl> as the trigger for autocompletion
 inoremap <A-Tab> <Plug>(coc-trigger)
 
 
