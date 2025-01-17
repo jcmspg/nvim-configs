@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Created by `pipx` on 2024-04-12 23:17:24
-export PATH="$PATH:/home/joao/.local/bin"
+export PATH="$PATH:/home/usr/.local/bin"
 
 
 #Aliases
